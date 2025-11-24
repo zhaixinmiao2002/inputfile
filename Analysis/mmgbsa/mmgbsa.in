@@ -1,0 +1,23 @@
+Per-residue GB and PB decomposition
+&general
+   endframe=2000, interval=10,
+   verbose=2, keep_files=0,
+/
+&gb
+  igb=2, saltcon=0.150,
+/
+
+!&pb
+!  istrng=0.15, fillratio=4.0, inp=2, radiopt=0,
+!/
+
+!&nmode
+!   nmode_igb=1, nmode_istrng=0.0,
+!   drms=0.1, maxcyc=1000,
+!/
+
+&decomp
+  idecomp=1, print_res="1-446"
+  dec_verbose=1,
+/
+

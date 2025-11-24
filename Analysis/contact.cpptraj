@@ -1,0 +1,15 @@
+parm mmpbsa_short/complex.parm7
+
+trajin mmpbsa_short/01_jak1_sosc1_1_complex.dcd
+trajin mmpbsa_short/01_jak1_sosc1_2_complex.dcd
+trajin mmpbsa_short/01_jak1_sosc1_3_complex.dcd
+#trajin mmpbsa_short/01_jak1_sosc1_4_complex.dcd
+trajin mmpbsa_short/01_jak1_sosc1_5_complex.dcd
+
+parm mmpbsa_short/complex.parm7
+  
+nativecontacts :1-289 :290-450 out JAK1_SOCS1_contacts.dat distance 4.0
+
+
+run
+quit

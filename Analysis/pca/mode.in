@@ -1,0 +1,9 @@
+#-modes.in
+parm ../../mmpbsa_short/complex.parm7
+readdata wt_atp_bbg_1_evecs.dat
+modes name wt_atp_bbg_1_evecs.dat trajout wt_atp_bbg_1_extreme.pdb \
+   trajoutfmt pdb trajoutmask @CA \
+   pcmin -50 pcmax 50 tmode 1
+modes name wt_atp_bbg_1_evecs.dat fluct out rmsfluct.dat beg 1 end 10
+modes name wt_atp_bbg_1_evecs.dat eigenval out frac.out beg 1 end 10
+

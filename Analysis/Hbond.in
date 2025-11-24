@@ -1,0 +1,29 @@
+parm  mmpbsa_short_noATP/complex.parm7
+trajin mmpbsa_short_noATP/01_jak1_sosc1_1_complex.dcd
+trajin mmpbsa_short_noATP/01_jak1_sosc1_2_complex.dcd
+trajin mmpbsa_short_noATP/01_jak1_sosc1_3_complex.dcd
+#trajin mmpbsa_short/01_jak1_sosc1_4_complex.dcd
+trajin mmpbsa_short_noATP/01_jak1_sosc1_5_complex.dcd
+
+
+hbond donormask :291@NH1 acceptormask :173@OD1 angle 135 dist 4.0  out nhb_O1.dat avgout avghb_O1.dat
+hbond donormask :291@NH1 acceptormask :173@OD2 angle 135 dist 4.0  out nhb_O1.dat avgout avghb_O1.dat
+hbond donormask :291@NH2 acceptormask :175@OD1 angle 135 dist 4.0  out nhb_O1.dat avgout avghb_O1.dat
+hbond donormask :291@NH2 acceptormask :175@OD2 angle 135 dist 4.0  out nhb_O1.dat avgout avghb_O1.dat
+hbond donormask :176@N acceptormask :290@O angle 135 dist 4.0  out nhb_O1.dat avgout avghb_O1.dat
+hbond donormask :290@N acceptormask :176@O angle 135 dist 4.0  out nhb_O1.dat avgout avghb_O1.dat
+hbond donormask :293@N acceptormask :186@O angle 135 dist 4.0  out nhb_O1.dat avgout avghb_O1.dat
+hbond donormask :299@OH acceptormask :239@OD1 angle 135 dist 4.0  out nhb_O1.dat avgout avghb_O1.dat
+hbond donormask :236@NH2 acceptormask :340@OD2 angle 135 dist 4.0  out nhb_O1.dat avgout avghb_O1.dat
+hbond donormask :236@NH1 acceptormask :340@OD1 angle 135 dist 4.0  out nhb_O1.dat avgout avghb_O1.dat
+hbond donormask :344@NH1 acceptormask :175@OD1 angle 135 dist 4.0  out nhb_O1.dat avgout avghb_O1.dat
+hbond donormask :344@NH1 acceptormask :175@OD2 angle 135 dist 4.0  out nhb_O1.dat avgout avghb_O1.dat
+hbond donormask :344@NH2 acceptormask :175@OD2 angle 135 dist 4.0  out nhb_O1.dat avgout avghb_O1.dat
+hbond donormask :344@NH2 acceptormask :175@OD1 angle 135 dist 4.0  out nhb_O1.dat avgout avghb_O1.dat
+hbond donormask :342@NH2 acceptormask :229@ND1 angle 135 dist 4.0  out nhb_O1.dat avgout avghb_O1.dat
+hbond donormask :231@N acceptormask :346@O angle 135 dist 4.0  out nhb_O1.dat avgout avghb_O1.dat
+
+
+
+
+run

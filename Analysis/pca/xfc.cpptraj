@@ -1,0 +1,14 @@
+parm ../../mmpbsa_short/complex.parm7
+trajin ../../mmpbsa_short/02_jak1_sosc2_1_complex.dcd 
+autoimage
+rms :1-646@CA
+average crdset MyAvg :1-646@CA
+run
+rms :1-646@CA ref MyAvg @CA out wt_atp_bbg_1_RmsToAvg.dat
+matrix correl name MyMatrix :1-646@CA out wt_atp_bbg_1_Matrix.dat
+#matrix covar name MyMatrix :1-646@CA
+createcrd CRD1
+run
+runanalysis diagmatrix MyMatrix vecs 10 name MyEvecs out wt_atp_bbg_1_evecs.dat nmwiz nmwizvecs 10 \
+    nmwizfile wt_atp_bbg_1_nmwiz.nmd nmwizmask :1-646@CA
+crdaction CRD1 projection evecs MyEvecs :1-646@CA out wt_atp_bbg_1_project.dat beg 1 end 10

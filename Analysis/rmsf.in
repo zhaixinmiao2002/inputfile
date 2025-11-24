@@ -1,0 +1,8 @@
+
+parm mmpbsa_short/complex.parm7
+reference mmpbsa_short/complex.pdb
+trajin mmpbsa_short/01_jak1_sosc1_5_complex.dcd
+center :1-451 mass
+image center familiar
+rms reference @CA
+atomicfluct out jak1_socs1_rmsf5.dat :160-360@CA,C,N byres

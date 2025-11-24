@@ -1,0 +1,13 @@
+parm  mmpbsa_short/complex.parm7
+trajin mmpbsa_short/01_jak1_sosc1_1_complex.dcd
+trajin mmpbsa_short/01_jak1_sosc1_2_complex.dcd
+trajin mmpbsa_short/01_jak1_sosc1_3_complex.dcd
+#trajin mmpbsa_short/01_jak1_sosc1_4_complex.dcd
+trajin mmpbsa_short/01_jak1_sosc1_5_complex.dcd
+
+
+
+surf        out  surf.dat
+surf :165-289  out  01_sasa.dat
+surf :290-360 out  01_sasa.dat
+surf :165-360  out  01_sasa.dat

@@ -1,0 +1,11 @@
+parm  mmpbsa_short_noATP/complex.parm7
+trajin mmpbsa_short_noATP/01_jak1_sosc1_1_complex.dcd
+trajin mmpbsa_short_noATP/01_jak1_sosc1_2_complex.dcd
+trajin mmpbsa_short_noATP/01_jak1_sosc1_3_complex.dcd
+#trajin mmpbsa_short/01_jak1_sosc1_4_complex.dcd
+trajin mmpbsa_short_noATP/01_jak1_sosc1_5_complex.dcd
+
+
+distance 187@SD_299@C :187@SD :299@CE1,CZ,CE2,CD2,CG,CD1 out distance_01.dat
+distance 232@SD_347@C :232@SD :347@CE1,CZ,CE2,CD2,CG,CD1 out distance_01.dat
+distance 232@SD_348@C :232@SD :348@CE1,CZ,CE2,CD2,CG,CD1 out distance_01.dat

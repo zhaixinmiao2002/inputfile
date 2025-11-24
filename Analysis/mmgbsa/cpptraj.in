@@ -1,0 +1,56 @@
+parm  ../01_jak1_sosc1_1.parm7
+trajin ../01_jak1_sosc1_1.dcd -1 -1
+autoimage
+strip :287-294,455-1000000
+trajout 01_jak1_sosc1_complex.pdb
+run
+clear all
+
+
+
+parm  ../01_jak1_sosc1_1.parm7
+trajin ../01_jak1_sosc1_1.dcd -2000 -1
+autoimage
+strip :287-294,455-1000000
+trajout 01_jak1_sosc1_1_complex.dcd
+run
+clear all
+
+
+parm  ../01_jak1_sosc1_2.parm7
+trajin ../01_jak1_sosc1_2.dcd -2000 -1
+autoimage
+strip :287-294,455-1000000
+trajout 01_jak1_sosc1_2_complex.dcd
+run
+clear all
+
+
+parm  ../01_jak1_sosc1_3.parm7
+trajin ../01_jak1_sosc1_3.dcd -2000 -1
+autoimage
+strip :287-294,455-1000000
+trajout 01_jak1_sosc1_3_complex.dcd
+run
+clear all
+
+
+parm  ../01_jak1_sosc1_4.parm7
+trajin ../01_jak1_sosc1_4.dcd -2000 -1
+autoimage
+strip :287-294,455-1000000
+trajout 01_jak1_sosc1_4_complex.dcd
+run
+clear all
+
+
+parm  ../01_jak1_sosc1_5.parm7
+trajin ../01_jak1_sosc1_5.dcd -2000 -1
+autoimage
+strip :287-294,455-1000000
+trajout 01_jak1_sosc1_5_complex.dcd
+run
+clear all
+
+
+

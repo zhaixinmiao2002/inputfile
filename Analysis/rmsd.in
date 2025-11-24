@@ -1,0 +1,99 @@
+parm  mmpbsa_short/complex.parm7
+trajin mmpbsa_short/01_jak1_sosc1_1_complex.dcd 
+autoimage
+
+rms first mass  out 01_rms_pro_1.dat :165-289@CA,C,N time 0.002
+rms first mass out 01_rms_pro_1.dat :290-360@CA,C,N time 0.002
+rms first mass  out 01_rms_pro_1.dat :165-360@CA,C,N time 0.002
+
+atomicfluct out 01_rmsf_1.dat :165-289@CA byres
+atomicfluct out 01_rmsf_1.dat :290-360@CA byres
+
+radgyr :165-289&!(@H=) out 01_rg_1.dat mass nomax
+radgyr :290-360&!(@H=) out 01_rg_1.dat mass nomax
+radgyr :165-360&!(@H=) out 01_rg_1.dat mass nomax
+
+run
+clear all
+
+
+
+
+parm  mmpbsa_short/complex.parm7
+trajin mmpbsa_short/01_jak1_sosc1_2_complex.dcd 
+autoimage
+
+rms first mass out 01_rms_pro_2.dat :165-289@CA,C,N time 0.002
+rms first mass  out 01_rms_pro_2.dat :290-360@CA,C,N time 0.002
+rms first mass  out 01_rms_pro_2.dat :165-360@CA,C,N time 0.002
+
+atomicfluct out 01_rmsf_2.dat :165-289@CA byres
+atomicfluct out 01_rmsf_2.dat :290-360@CA byres
+
+radgyr :165-289&!(@H=) out 01_rg_2.dat mass nomax
+radgyr :290-360&!(@H=) out 01_rg_2.dat mass nomax
+radgyr :165-360&!(@H=) out 01_rg_2.dat mass nomax
+
+run
+clear all
+
+
+
+parm  mmpbsa_short/complex.parm7
+trajin mmpbsa_short/01_jak1_sosc1_3_complex.dcd 
+autoimage
+
+rms first mass out 01_rms_pro_3.dat :165-289@CA,C,N time 0.002
+rms first mass out 01_rms_pro_3.dat :290-360@CA,C,N time 0.002
+rms first mass  out 01_rms_pro_3.dat :165-360@CA,C,N time 0.002
+
+atomicfluct out 01_rmsf_3.dat :165-289@CA byres
+atomicfluct out 01_rmsf_3.dat :290-360@CA byres
+
+radgyr :165-289&!(@H=) out 01_rg_3.dat mass nomax
+radgyr :290-360&!(@H=) out 01_rg_3.dat mass nomax
+radgyr :165-360&!(@H=) out 01_rg_3.dat mass nomax
+
+run
+clear all
+
+
+
+parm  mmpbsa_short/complex.parm7
+trajin mmpbsa_short/01_jak1_sosc1_4_complex.dcd 
+autoimage
+
+rms first mass   out 01_rms_pro_4.dat :165-289@CA,C,N time 0.002
+rms first mass out 01_rms_pro_4.dat :290-360@CA,C,N time 0.002
+rms first mass  out 01_rms_pro_4.dat :165-360@CA,C,N time 0.002
+
+atomicfluct out 01_rmsf_4.dat :165-289@CA  byres
+atomicfluct out 01_rmsf_4.dat :290-360@CA byres
+
+radgyr :165-289&!(@H=) out 01_rg_4.dat mass nomax
+radgyr :290-360&!(@H=) out 01_rg_4.dat mass nomax
+radgyr :165-360&!(@H=) out 01_rg_4.dat mass nomax
+
+run
+clear all
+
+
+parm  mmpbsa_short/complex.parm7
+trajin mmpbsa_short/01_jak1_sosc1_5_complex.dcd 
+autoimage
+
+rms first mass out 01_rms_pro_5.dat :165-289@CA,C,N time 0.002
+rms first mass out 01_rms_pro_5.dat :290-360@CA,C,N time 0.002
+rms first mass out 01_rms_pro_5.dat :165-360@CA,C,N time 0.002
+
+atomicfluct out 01_rmsf_5.dat :165-289@CA byres
+atomicfluct out 01_rmsf_5.dat :290-360@CA byres
+
+radgyr :165-289&!(@H=) out 01_rg_5.dat mass nomax
+radgyr :290-360&!(@H=) out 01_rg_5.dat mass nomax
+radgyr :165-360&!(@H=) out 01_rg_5.dat mass nomax
+
+run
+clear all
+
+
