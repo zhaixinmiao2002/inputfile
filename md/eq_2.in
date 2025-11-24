@@ -1,0 +1,16 @@
+equil 
+ &cntrl
+  imin=0,irest=0,ntx=1,
+  nstlim=1000000,dt=0.001,
+  ntc=2,ntf=2,
+  cut=10.0, ntb=2, ntp=1, taup=2.0,
+  ntpr=1000, ntwx=1000, ntwr=1000,
+  ntt=3, gamma_ln=2.0,
+  temp0=300.0,ntr=1, iwrap=1,
+  restraintmask=':1-454',
+  restraint_wt=20.0
+/
+&ewald
+ ew_type = 0, skinnb = 1.0,
+ &end
+

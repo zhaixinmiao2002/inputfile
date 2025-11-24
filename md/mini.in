@@ -1,0 +1,20 @@
+ &cntrl
+ imin=1,
+ ntx=1,
+ irest=0,
+ ntpr=50,
+ ntf=1,
+ ntb=1,
+ cut=9.0,
+ nsnb=10,
+ ntr=1,
+ maxcyc=50000,
+ ncyc=25000,
+ ntmin=1,
+ restraintmask=':1-454',
+ restraint_wt=5.0,
+ &end
+ &ewald
+   ew_type = 0, skinnb = 1.0,
+ &end
+
