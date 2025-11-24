@@ -1,0 +1,14 @@
+density complex
+ &cntrl
+  imin=0,irest=0,ntx=1,
+  nstlim=50000,dt=0.001,
+  ntc=2,ntf=2,
+  cut=10.0, ntb=2, ntp=1, taup=1.0,
+  ntpr=500, ntwx=500,
+  ntt=3, gamma_ln=2.0,
+  temp0=300.0,
+  ntr=1,ig=-1,iwrap=1,
+  restraintmask=':1-454',
+  restraint_wt=20.0
+ /
+

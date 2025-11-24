@@ -1,0 +1,13 @@
+remark goes here
+
+BOND
+CA - OS  525.0   1.610
+
+ANGLE
+CA - CA - OS   70.0   120.00
+CA - OS - P   100.0   120.50 
+
+DIHE
+CA-CA-OS-P  1   1.1     180.0      2.0
+
+
