@@ -1,0 +1,34 @@
+source oldff/leaprc.ff14SB
+source leaprc.DNA.bsc1
+source leaprc.water.tip3p
+loadoff atomic_ions.lib
+loadamberparams frcmod.ionsjc_tip3p
+source leaprc.gaff
+
+loadamberprep ../../inputfile/ATP.prepi
+loadamberparams ../../inputfile/ATP.frcmod
+
+
+loadoff ../../inputfile/SEP.lib
+loadoff ../../inputfile/TYP.lib
+loadamberparams ../../inputfile/TYP.frcmod
+loadoff ../../inputfile/THP.lib
+loadoff ../../inputfile/Y2P.lib
+
+complex = loadpdb "JAK1_SOCS1.pdb"
+
+savepdb complex complex.pdb
+
+solvatebox complex  TIP3PBOX 10.0
+
+addions complex Na+ 0
+
+addions complex Cl- 0
+
+savepdb complex complex_wat.pdb
+
+
+saveamberparm complex complex.parm7 complex.rst7
+
+quit
+
